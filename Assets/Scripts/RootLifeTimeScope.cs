@@ -11,7 +11,7 @@ namespace DefaultNamespace
         
         protected override void Configure(IContainerBuilder builder)
         {
-            builder.RegisterEntryPoint<Presenter>(Lifetime.Singleton);
+            builder.RegisterEntryPoint<Presenter>();
             builder.Register<Model>(Lifetime.Singleton);
             builder.RegisterComponent(_view);
         }
